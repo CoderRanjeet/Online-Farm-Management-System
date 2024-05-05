@@ -1,0 +1,238 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Customer.master.cs" Inherits="OnlineFarm.Customer" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="favicon.png">
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap4" />
+<%--    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Open+Sans&display=swap" rel="stylesheet">--%>
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css1/bootstrap.min.css">
+    <link rel="stylesheet" href="css1/jquery-ui.css">
+    <link rel="stylesheet" href="css1/owl.carousel.min.css">
+    <link rel="stylesheet" href="css1/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css1/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css1/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css1/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css1/aos.css">
+    <link rel="stylesheet" href="css1/style.css">
+
+    <title>Farm Management</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css" />
+    <script type="text/javascript">
+        function AlertMessage(Title, message, MessageType) {
+            Swal.fire
+                (
+                    Title, message, MessageType
+                )
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #f7f7f7;
+        }
+        .headerMargin{
+            margin-top:130px;
+        }
+    </style>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="site-wrap">
+            <div class="site-mobile-menu site-navbar-target">
+                <div class="site-mobile-menu-header">
+                    <div class="site-mobile-menu-close mt-3">
+                        <span class="icon-close2 js-menu-toggle"></span>
+                    </div>
+                </div>
+                <div class="site-mobile-menu-body"></div>
+            </div>
+
+            <div class="header-top bg-light">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-6 col-lg-3">
+                            <a href="index.html" class="logo">
+                                <img src="images1/logo.png" alt="Image" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 d-none d-lg-block">
+
+                            <div class="quick-contact-icons d-flex align-items-center">
+                                <div class="icon align-self-center mt-3">
+                                    <span class="icon-room text-primary"></span>
+                                </div>
+                                <div class="text">
+                                    <span class="h4 d-block">Chandrapur</span>
+                                    <span class="caption-text">St workshop Tukum ,chandrapur, MH 442401</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-3 d-none d-lg-block">
+                            <div class="quick-contact-icons d-flex align-items-center">
+                                <div class="icon align-self-center mt-3">
+                                    <span class="icon-phone text-primary"></span>
+                                </div>
+                                <div class="text">
+                                    <span class="h4 d-block">+91-9822222222</span>
+                                    <span class="caption-text">Call us</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 d-none d-lg-block">
+                            <div class="quick-contact-icons d-flex align-items-center">
+                                <div class="icon align-self-center mt-3">
+                                    <span class="icon-envelope text-primary"></span>
+                                </div>
+                                <div class="text">
+                                    <span class="h4 d-block">info@farmmanagement.com</span>
+                                    <span class="caption-text">Email us</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 d-block d-lg-none text-right">
+                            <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black"><span
+                                class="icon-menu h3"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="site-navbar py-2 js-sticky-header site-navbar-target d-none pl-0 d-lg-block" role="banner">
+
+                    <div class="container">
+                        <div class="d-flex align-items-center">
+
+                            <div class="mx-auto">
+                                <nav class="site-navigation position-relative text-right" role="navigation">
+                                    <ul class="site-menu main-menu js-clone-nav mr-auto d-none pl-0 d-lg-block">
+                                        <li>
+                                            <a href="Home.aspx" class="nav-link text-left font-weight-bold">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="ShoppingStore.aspx" class="nav-link text-left font-weight-bold">Shopping Store</a>
+                                        </li>
+                                        <li>
+                                            <a href="Cart.aspx" class="nav-link text-left font-weight-bold">Cart</a>
+                                        </li>
+                                        <li>
+                                            <a href="ContactUs.aspx" class="nav-link text-left font-weight-bold">Contact</a>
+                                        </li>
+                                         <li>
+                                            <a href="#" class="nav-link text-left font-weight-bold">About</a>
+                                        </li>
+                                        <li>
+                                            <a href="CustOrderData.aspx" class="nav-link text-left font-weight-bold">My Account</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="headerMargin">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-lg-3">
+                        <p class="mb-4">
+                            <img src="images1/logo-light.png" alt="Image" class="img-fluid">
+                        </p>
+                        <p>Farm Management is a management method for organizing and carrying out farming-related decisions, such as those regarding crops, livestock, aquaculture, agroforestry, etc., to maximize productivity and profits.</p>
+
+                    </div>
+                    <div class="col-lg-3">
+                        <h3 class="footer-heading"><span>Our Company</span></h3>
+                        <ul class="list-unstyled">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="Dashboard.aspx">Go to Admin Page</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h3 class="footer-heading"><span>Our Categories</span></h3>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Fruits</a></li>
+                            <li><a href="#">Vegetables</a></li>
+                            <li><a href="#">Grains</a></li>
+                            <li><a href="#">Salad Items</a></li>
+                            <li><a href="#">Exotic Vegetables</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h3 class="footer-heading"><span>Help & Support</span></h3>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Support Community</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Shipping and Delivery Policy</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="copyright border-top pt-4">
+                            <p>
+                                Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed By Farm Management Team
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="loader" class="show fullscreen">
+            <svg class="circular" width="48px" height="48px">
+                <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+                <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#116530" />
+            </svg>
+        </div>
+
+        <script src="js1/jquery-3.3.1.min.js"></script>
+        <script src="js1/jquery-migrate-3.0.1.min.js"></script>
+        <script src="js1/jquery-ui.js"></script>
+        <script src="js1/popper.min.js"></script>
+        <script src="js1/bootstrap.min.js"></script>
+        <script src="js1/owl.carousel.min.js"></script>
+        <script src="js1/jquery.stellar.min.js"></script>
+        <script src="js1/jquery.countdown.min.js"></script>
+        <script src="js1/bootstrap-datepicker.min.js"></script>
+        <script src="js1/jquery.easing.1.3.js"></script>
+        <script src="js1/aos.js"></script>
+        <script src="js1/jquery.fancybox.min.js"></script>
+        <script src="js1/jquery.sticky.js"></script>
+        <script src="js1/jquery.mb.YTPlayer.min.js"></script>
+        <script src="js1/main.js"></script>
+          <!--sweet Alert Javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </form>
+</body>
+</html>
