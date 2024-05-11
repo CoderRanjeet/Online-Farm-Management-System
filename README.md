@@ -54,12 +54,14 @@ Customers can track the status of their orders, including confirmation, packagin
 Customers can provide feedback and reviews for products and farmers, enhancing transparency and trust.
 
 5. Technology Stack:
+   
 •	Frontend: ASP.NET, HTML, CSS, Bootstrap 
 •	Backend: C#, LINQ
 •	Database: MS-SQL
 •	Payment Gateway Integration (Upcoming): Paytm, PayPal, etc.
 
 7. Implementation Plan:
+   
 •	Phase 1: Requirement Analysis and Planning
 •	Phase 2: Design and Prototyping
 •	Phase 3: Frontend and Backend Development
@@ -68,6 +70,7 @@ Customers can provide feedback and reviews for products and farmers, enhancing t
 •	Phase 6: Continuous Monitoring and Maintenance
 
 6. Conclusion:
+   
    The development of an online vegetables and fruits selling platform presents an opportunity to empower farmers,
    provide consumers with fresh produce, and foster community engagement. By adhering to best practices in design, technology,
     and customer service, the project aims to create a sustainable and mutually beneficial ecosystem for farmers and customers alike.
