@@ -30,18 +30,28 @@ We welcome you to the “Farm Management System”. To present before software t
 3. Features:
    
 For Farmers:
-•	Registration and Profile Management: Farmers can register on the platform and create/manage their profiles, including details such as farm location, types of produce, etc.
-•	Product Listing: Farmers can list their available vegetables and fruits with descriptions, images, and prices.
-•	Order Management: Farmers can view and manage orders received, including order status updates and order history.
+•	Registration and Profile Management: 
+Farmers can register on the platform and create/manage their profiles, including details such as farm location, types of produce, etc.
+•	Product Listing: 
+Farmers can list their available vegetables and fruits with descriptions, images, and prices.
+•	Order Management: 
+Farmers can view and manage orders received, including order status updates and order history.
 
 For Customers:
-•	User Registration and Profile: Customers can register and create profiles, including delivery addresses and payment preferences.
-•	Browsing and Searching: Customers can browse through various categories of vegetables and fruits, filter based on preferences, and search for specific items.
-•	Product Details: Detailed information about each product, including images, descriptions, prices, and farmer details.
-•	Cart and Checkout: Customers can add items to their cart, review their selections, and proceed to secure checkout.
-•	Payment Gateway: Integration of a secure payment gateway for smooth and safe transactions.
-•	Order Tracking: Customers can track the status of their orders, including confirmation, packaging, and delivery.
-•	Feedback and Reviews: Customers can provide feedback and reviews for products and farmers, enhancing transparency and trust.
+•	User Registration and Profile:
+Customers can register and create profiles, including delivery addresses and payment preferences.
+•	Browsing and Searching: 
+Customers can browse through various categories of vegetables and fruits, filter based on preferences, and search for specific items.
+•	Product Details: 
+Detailed information about each product, including images, descriptions, prices, and farmer details.
+•	Cart and Checkout:
+Customers can add items to their cart, review their selections, and proceed to secure checkout.
+•	Payment Gateway: 
+Integration of a secure payment gateway for smooth and safe transactions.
+•	Order Tracking: 
+Customers can track the status of their orders, including confirmation, packaging, and delivery.
+•	Feedback and Reviews: 
+Customers can provide feedback and reviews for products and farmers, enhancing transparency and trust.
 
 5. Technology Stack:
 •	Frontend: ASP.NET, HTML, CSS, Bootstrap 
@@ -49,7 +59,7 @@ For Customers:
 •	Database: MS-SQL
 •	Payment Gateway Integration (Upcoming): Paytm, PayPal, etc.
 
-6. Implementation Plan:
+7. Implementation Plan:
 •	Phase 1: Requirement Analysis and Planning
 •	Phase 2: Design and Prototyping
 •	Phase 3: Frontend and Backend Development
